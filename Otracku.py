@@ -8,7 +8,7 @@ import asyncio
 from AnilistPython import Anilist
 anilist=Anilist()
 load_dotenv()
-TOKEN = os.getenv('MTAzNDQzODkzODk1OTU0NDMyMg.GISW0X.IPnQ1vlkji7ylEivz3K5-YCMOIHgg8ti98nths')
+TOKEN = os.getenv('Token')
 intents = discord.Intents()
 intents.emojis = True
 intents.messages = True
@@ -65,4 +65,4 @@ async def mansyn(ctx,ded=""):
     syn.set_thumbnail(url=a['cover_image'])
     await ctx.send(embed=syn)
 
-client.run('MTAzNDQzODkzODk1OTU0NDMyMg.GISW0X.IPnQ1vlkji7ylEivz3K5-YCMOIHgg8ti98nths')
+client.run('Token')
